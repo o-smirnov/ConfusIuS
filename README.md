@@ -1,4 +1,5 @@
 # ConfusIuS
-# Confusion included Stacking Program - ConfusIuS
+Confusion included Stacking Program - ConfusIuS
 
-# To run you Need FFTW and GSL
+# Install
+Need FFTW and GSL and modify the makefile(or .mk files) for the paths 
