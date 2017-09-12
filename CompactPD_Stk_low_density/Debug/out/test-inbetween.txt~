@@ -1,0 +1,12 @@
+set xrange [1e-8:1e-6]
+#set xrange [-100e-6:150e-6]
+#set yrange [1:1e8]
+
+#set logscale xy
+
+
+plot "./out/test-inbetween.dat" using 1:(sqrt($2*$2)) title 'myreal' w l,\
+     "/home/ubuntu/Dropbox/UWC/Mario/PofD/rx.txt" using ($3):(sqrt($1*$1)) title 'pythonreal' w l,\
+     "./out/test-inbetween.dat" using 1:(sqrt($3*$3)) title 'myimag' w l,\
+     "/home/ubuntu/Dropbox/UWC/Mario/PofD/rx.txt" using ($3):(sqrt($2*$2)) title 'pythonimag' w l
+

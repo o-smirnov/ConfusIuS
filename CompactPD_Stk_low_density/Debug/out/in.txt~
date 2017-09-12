@@ -1,0 +1,10 @@
+#set xrange [-100e-6:100e-6]
+#set xrange [-100e-6:150e-6]
+#set yrange [1:1e8]
+
+#set logscale y
+
+
+plot "./out/input.dat" using 1:2 title 'myinput' w l,\
+     "/home/ubuntu/Dropbox/UWC/Mario/PofD/rx.txt" using 1:4 title 'python' w l
+
